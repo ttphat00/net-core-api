@@ -19,5 +19,12 @@ namespace device_management.Data
         public int EquipmentId { get; set; }
         [ForeignKey(nameof(EquipmentId))]
         public Equipment Equipment { get; set; }
+
+        public BorrowingEquipment()
+        {
+            IsDeleted = false;
+            CreatedAt = DateTime.Today;
+            UpdatedAt = DateTime.Today;
+        }
     }
 }

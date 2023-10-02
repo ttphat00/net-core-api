@@ -33,6 +33,7 @@ builder.Services.AddScoped<IRequestTypeRepository, RequestTypeRepository>();
 builder.Services.AddScoped<IRequestStatusRepository, RequestStatusRepository>();
 builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
 builder.Services.AddScoped<IRequestRepository, RequestRepository>();
+builder.Services.AddScoped<IBorrowingDeviceRepository, BorrowingDeviceRepository>();
 
 var app = builder.Build();
 
